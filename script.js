@@ -2,7 +2,7 @@
 var time = moment().format("H");
 
 //so we can display the date on the website
-var currentDate = moment().format("MMM Do, YYYY");
+var currentDate = moment().format("MMMM Do, YYYY");
 $("#currentDay").html(currentDate);
 
 //lets us save the text into the local storage
@@ -13,6 +13,7 @@ $(document).ready(function () {
         localStorage.setItem(currentTime, currentTask);
     })
     
+    //applies a class to the timeblocks which allows for the coloration
     function checkTime() {
         $(".time-block").each(function() {
             var hour = parseInt($(this).attr("id")); //makes a variable for timeblocks
@@ -20,17 +21,17 @@ $(document).ready(function () {
             if(hour < time) {
                 $(this).removeClass("future");
                 $(this).removeClass("present");
-                $(this).addClass("past")
+                $(this).addClass("past");
             }
-            else if (hour === time) {
-                $(this).removeClass("future");
+            else if (hour > time) {
                 $(this).removeClass("past");
-                $(this).addClass("present")
+                $(this).removeClass("present");
+                $(this).addClass("future");
             }
             else {
-                $(this).removeClass("present");
+                $(this).removeClass("future");
                 $(this).removeClass("past");
-                $(this).addClass("future")
+                $(this).addClass("present");
             }
         })
     };

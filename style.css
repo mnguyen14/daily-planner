@@ -1,5 +1,6 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  /*This font made me remember being in school with a daily planner so I selected it for the header*/
+  font-family: 'Unica One', monospace;
   font-size: 16px;
   line-height: 1;
 }
@@ -11,6 +12,8 @@ textarea {
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+  /*This was easier on my eyes to read at a smaller font*/
+  font-family: 'Ubuntu Mono', monospace;
 }
 
 .jumbotron {
