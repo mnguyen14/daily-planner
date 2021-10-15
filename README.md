@@ -6,19 +6,19 @@ Using HTML, CSS, and JavaScript to make a daily planner where you can input what
 I was given an HTML and CSS page. 
 All I had to do for the HTML page was link the JavaScript and add time-blocks that looked similar to the example I was given.
 
-[alt text](https://i.gyazo.com/b3cc6023fe43277f28e8e4ed6cd1720d.png)
+![alt text](https://i.gyazo.com/b3cc6023fe43277f28e8e4ed6cd1720d.png)
 
 I used Javascript and JQuery to put together a daily planner.
 It will save what you type into each textbox into the local storage and it'll stay there once you click the save button, even upon refresh.
 
-[alt text](https://i.gyazo.com/57acfbf74530ac2395fd5dc2867126c6.png)
+![alt text](https://i.gyazo.com/57acfbf74530ac2395fd5dc2867126c6.png)
 
 The pre-given CSS had a present, past, and future class so I set those boundaries for our timeblock's colors based on the current time.
 Unfortunately due to the time of screen shotting the images I can't show off the other colors.
 You can see that all the timeblocks are in the "past" colorway as it was after 5pm when I recorded the demo.
 Though there is already text in the box you can delete and type something else and it will overwrite it when you save it.
 
-[alt text](https://i.gyazo.com/e2769d73585aa93a2783ffe814112a77.png)
+![alt text](https://i.gyazo.com/e2769d73585aa93a2783ffe814112a77.png)
 unfortunately my cat's name isn't a word
 
 When you type something and don't hit save, it will not save it for you.
